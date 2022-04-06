@@ -4,6 +4,9 @@ Feature: Pinterst Main Page
   
   Scenario: Opening Pinterst in browser
     Given I open Pinterst page
-    # Then I see "Google" in the title
-
+    When User click on login
+    And User enter email address
+    And User enter password
+    Then User click on login button
     
+
