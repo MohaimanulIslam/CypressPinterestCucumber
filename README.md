@@ -1,5 +1,5 @@
 # CypressPinterestCucumber
-#Configure Cypress Command
+**Configure Cypress Command**
 npm init -y
 npm install cypress
 npx cypress -v
