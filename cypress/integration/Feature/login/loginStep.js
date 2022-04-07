@@ -12,12 +12,12 @@ When('User click on login', () => {
     loginPage.clickOnLoginButton().click();
   });
 
-And('User enter email address', () => {
-    loginPage.enterUserEmail().type('miraz.qups@gmail.com');
+And('User enter email address', function(){
+    loginPage.enterUserEmail().type(this.data.email);
   });
 
-And('User enter password', () => {
-    loginPage.enterUserPass().type("TestCase0101");
+And('User enter password', function() {
+    loginPage.enterUserPass().type(this.data.pass);
   });
 
 Then('User click on login button', () => {
