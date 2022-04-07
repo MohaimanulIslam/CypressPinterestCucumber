@@ -1,4 +1,7 @@
 import { And, Given, Then, When } from "cypress-cucumber-preprocessor/steps";
+import LoginPage from "../../pages/LoginPage";
+
+const loginPage = new LoginPage();
 
 const url = "https://www.pinterest.com/"
 Given('I open Pinterst page', () => {
@@ -6,19 +9,19 @@ Given('I open Pinterst page', () => {
   });
 
 When('User click on login', () => {
-    cy.get('[data-test-id="simple-login-button"] > .oRi > .RCK').click();
+    loginPage.clickOnLoginButton().click();
   });
 
 And('User enter email address', () => {
-    cy.get('#email').type('miraz.qups@gmail.com');
+    loginPage.enterUserEmail().type('miraz.qups@gmail.com');
   });
 
 And('User enter password', () => {
-    cy.get('#password').type("TestCase0101");
+    loginPage.enterUserPass().type("TestCase0101");
   });
 
 Then('User click on login button', () => {
-    cy.get('.red > .zI7').click();
+    loginPage.clickOnLogin().click();
   });
 
 
