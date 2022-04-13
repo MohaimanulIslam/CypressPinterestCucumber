@@ -2,6 +2,7 @@ Feature: Pinterst Main Page
 
   I want to login Pinterst
   
+  @testing
   Scenario: Opening Pinterst in browser
     Given I open Pinterst page
     When User click on login

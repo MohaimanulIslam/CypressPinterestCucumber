@@ -84,3 +84,14 @@ import '@shelex/cypress-allure-plugin';
 for IntelliSense (autocompletion) support in your IDE add on top of your cypress/plugins/index.js file:
 
 /// <reference types="@shelex/cypress-allure-plugin" />
+
+<br>
+
+**Allure run command**
+
+for windows:
+<br>
+npx cypress run --env  "TAGS=@smoke","allure=true"
+
+for run headed mode
+npx cypress run --headed --browser chrome  --env allure=true

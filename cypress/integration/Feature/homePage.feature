@@ -9,6 +9,7 @@ Feature: Pinterst Main Page
     And User enter password
     Then User click on login button
     
-Scenario: Click on bell
+  @smoke
+  Scenario: Click on bell
     Given I click on bell icon
 
