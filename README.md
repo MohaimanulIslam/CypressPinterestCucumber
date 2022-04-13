@@ -1,5 +1,5 @@
 # CypressPinterestCucumber
-<br>
+
 **Configure Cypress Command**
 <br>
 npm init -y
