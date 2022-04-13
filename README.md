@@ -45,6 +45,7 @@ cypress.json
 <br>}
 
 **Configuration**
+<br>
 Please make use of cosmiconfig to create a configuration for the plugin, for example, by adding this section to your package.json:
 
 "cypress-cucumber-preprocessor": {<br>
