@@ -1,4 +1,5 @@
 import { And, Given, Then, When } from "cypress-cucumber-preprocessor/steps";
+import Login from "../../utils/locators";
 
 const locator = new Login();
 
