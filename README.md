@@ -1,17 +1,27 @@
 # CypressPinterestCucumber
+<br>
 **Configure Cypress Command**
+<br>
 npm init -y
+<br>
 npm install cypress
+<br>
 npx cypress -v
+<br>
 npx cypress open
+<br>
 
 **Configure Mocha and Mochaawesome module**
+<br>
 npm install --save-dev mocha
+<br>
 npm install --save-dev mochawesome
 
 **Intall cypress-cucumber-preprocessor**
+<br>
 
 **Installation**
+<br>
 npm install --save-dev cypress-cucumber-preprocessor
 
 **Configuration cypress-cucumber-preprocessor**
