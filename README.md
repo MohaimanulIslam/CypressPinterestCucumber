@@ -52,3 +52,35 @@ Please make use of cosmiconfig to create a configuration for the plugin, for exa
   "nonGlobalStepDefinitions": true
 <br>}
 
+
+**cypress-allure-plugin**
+<br>
+npm i -D @shelex/cypress-allure-plugin
+<br>
+
+**Setup**
+Connect plugin in cypress/plugins/index.js. Take into account that Cypress generate plugins file with module.exports on the first initialization but you should have only one export section. In order to add Allure writer task just replace it or add writer task somewhere before returning config:
+<br>
+as only plugin:
+const allureWriter = require('@shelex/cypress-allure-plugin/writer');
+// import allureWriter from "@shelex/cypress-allure-plugin/writer";
+
+module.exports = (on, config) => {<br>
+    allureWriter(on, config);
+    return config;
+<br>};
+
+if you have webpack or other preprocessors please set allure writer before returning "config":
+module.exports = (on, config) => {<br>
+    on('file:preprocessor', webpackPreprocessor);
+    allureWriter(on, config);
+    return config;
+<br>};
+Register commands in cypress/support/index.js file:
+<br>
+with import:
+import '@shelex/cypress-allure-plugin';
+<br>
+for IntelliSense (autocompletion) support in your IDE add on top of your cypress/plugins/index.js file:
+
+/// <reference types="@shelex/cypress-allure-plugin" />
