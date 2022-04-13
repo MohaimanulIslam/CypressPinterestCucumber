@@ -31,23 +31,23 @@ Add it to your plugins:
 cypress/plugins/index.js
 
 const cucumber = require('cypress-cucumber-preprocessor').default
-
-module.exports = (on, config) => {
+<br>
+module.exports = (on, config) => {<br>
   on('file:preprocessor', cucumber())
-}
+<br>}
 
 Add support for feature files to your Cypress configuration
 
 cypress.json
-
-{
+<br>
+{<br>
   "testFiles": "**/*.feature"
-}
+<br>}
 
 **Configuration**
 Please make use of cosmiconfig to create a configuration for the plugin, for example, by adding this section to your package.json:
 
-"cypress-cucumber-preprocessor": {
+"cypress-cucumber-preprocessor": {<br>
   "nonGlobalStepDefinitions": true
-}
+<br>}
 
