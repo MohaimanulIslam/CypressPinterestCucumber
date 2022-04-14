@@ -2,8 +2,10 @@ import { And, Given, Then, When } from "cypress-cucumber-preprocessor/steps";
 
 Given('I click on bell icon', function() {
 
-  // cy.get('[style="height:100%;width:100%"]', { timeout: 10000 }).should('be.visible');
-  cy.get('[style="height:100%;width:100%"]').click();
+  // cy.waitUntil(() => cy.window().then(win => win.foo === "bar"));
+
+  cy.waitUntil(() => cy.get('[style="height:100%;width:100%"]').wait(8000).click());
+  // cy.get('[style="height:100%;width:100%"]').click();
 
   });
 

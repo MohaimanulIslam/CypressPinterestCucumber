@@ -91,7 +91,16 @@ for IntelliSense (autocompletion) support in your IDE add on top of your cypress
 
 for windows:
 <br>
-npx cypress run --env  "TAGS=@smoke","allure=true"
+npx cypress open --env allure=true
+<br>
 
 for run headed mode
 npx cypress run --headed --browser chrome  --env allure=true
+
+**Run Cypress with annotation Commands**
+<br>
+npx cypress-tags run -e TAGS ='@Your-annotation'
+
+**Run Cypress allure report genaration with annotation Commands**
+<br>
+npx cypress-tags run -e TAGS ='@Your-annotation',allure=true
