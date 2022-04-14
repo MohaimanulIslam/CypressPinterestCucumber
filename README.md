@@ -105,8 +105,15 @@ npx cypress run --headed --browser chrome  --env allure=true
 **Run Cypress with annotation Commands**
 <br>
 npx cypress-tags run -e TAGS ='@Your-annotation'
+<br>
+./node_modules/.bin/cypress-tags run -e TAGS='@feature-tag'
+<br>
 
 **Run Cypress allure report genaration with annotation Commands**
 <br>
 npx cypress-tags run -e TAGS ='@Your-annotation',allure=true
+<br>
+./node_modules/.bin/cypress-tags run -e TAGS='@feature-tag',allure=true
+<br>
+npx cypress run --env  "TAGS=@smoke","allure=true"
 
