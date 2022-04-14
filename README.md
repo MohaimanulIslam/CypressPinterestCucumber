@@ -62,8 +62,11 @@ npm i -D @shelex/cypress-allure-plugin
 Connect plugin in cypress/plugins/index.js. Take into account that Cypress generate plugins file with module.exports on the first initialization but you should have only one export section. In order to add Allure writer task just replace it or add writer task somewhere before returning config:
 <br>
 as only plugin:
+<br>
 const allureWriter = require('@shelex/cypress-allure-plugin/writer');
+<br>
 // import allureWriter from "@shelex/cypress-allure-plugin/writer";
+<br>
 
 module.exports = (on, config) => {<br>
     allureWriter(on, config);
@@ -71,6 +74,7 @@ module.exports = (on, config) => {<br>
 <br>};
 
 if you have webpack or other preprocessors please set allure writer before returning "config":
+<br>
 module.exports = (on, config) => {<br>
     on('file:preprocessor', webpackPreprocessor);
     allureWriter(on, config);
@@ -79,6 +83,7 @@ module.exports = (on, config) => {<br>
 Register commands in cypress/support/index.js file:
 <br>
 with import:
+<br>
 import '@shelex/cypress-allure-plugin';
 <br>
 for IntelliSense (autocompletion) support in your IDE add on top of your cypress/plugins/index.js file:
@@ -104,3 +109,4 @@ npx cypress-tags run -e TAGS ='@Your-annotation'
 **Run Cypress allure report genaration with annotation Commands**
 <br>
 npx cypress-tags run -e TAGS ='@Your-annotation',allure=true
+
