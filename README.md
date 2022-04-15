@@ -142,6 +142,7 @@ npm run cy:parallel
 <br>
 
 **Referance link in parallel run**
+<br>
 https://github.com/tnicola/cypress-parallel
 <br>
 https://www.npmjs.com/package/cypress-multi-reporters
