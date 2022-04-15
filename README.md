@@ -130,8 +130,20 @@ Added two this in package.json
 "cy:parallel": "cypress-parallel -s cy:run -t 2 -d \"cypress/integration/Feature/*.feature\" -a false"
 <br>
 }
+<br>
+cypress-multi-reporters install for parallel run
+<br>
+npm install cypress-multi-reporters --save-dev
+<br>
+**Parallel run command**
 
+npm run cy:parallel
+<br>
 
+**Referance link in parallel run**
+https://github.com/tnicola/cypress-parallel
+<br>
+https://www.npmjs.com/package/cypress-multi-reporters
 
 
 
