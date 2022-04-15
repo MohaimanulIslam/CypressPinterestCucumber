@@ -1,0 +1,10 @@
+{
+  "suites": 1,
+  "tests": 1,
+  "passes": 0,
+  "pending": 0,
+  "failures": 1,
+  "start": "2022-04-15T08:46:15.022Z",
+  "duration": 56122,
+  "file": "cypress/integration/Feature/homePage.feature"
+}
