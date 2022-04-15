@@ -88,7 +88,7 @@ import '@shelex/cypress-allure-plugin';
 <br>
 for IntelliSense (autocompletion) support in your IDE add on top of your cypress/plugins/index.js file:
 
-**//<reference types="@shelex/cypress-allure-plugin"/>**
+<p>**//<reference types="@shelex/cypress-allure-plugin"/>**</p>
 
 <br>
 
