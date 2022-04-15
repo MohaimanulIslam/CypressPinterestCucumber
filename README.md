@@ -135,6 +135,7 @@ cypress-multi-reporters install for parallel run
 <br>
 npm install cypress-multi-reporters --save-dev
 <br>
+
 **Parallel run command**
 
 npm run cy:parallel
