@@ -116,4 +116,36 @@ npx cypress-tags run -e TAGS ='@Your-annotation',allure=true
 ./node_modules/.bin/cypress-tags run -e TAGS='@feature-tag',allure=true
 <br>
 npx cypress run --env  "TAGS=@smoke","allure=true"
+<br>
+
+**Parallel Run Added with Allure report Genaration**
+
+npm i cypress-parallel
+<br>
+Added two this in package.json
+<br>
+"scripts": {
+<br>
+"cy:run": "cypress run --env allure=true --browser chrome --headed",
+<br>
+"cy:parallel": "cypress-parallel -s cy:run -t 2 -d \"cypress/integration/Feature/*.feature\" -a false"
+<br>
+}
+<br>
+cypress-multi-reporters install for parallel run
+<br>
+npm install cypress-multi-reporters --save-dev
+<br>
+
+**Parallel run command**
+
+npm run cy:parallel
+<br>
+
+**Referance link in parallel run**
+<br>
+https://github.com/tnicola/cypress-parallel
+<br>
+https://www.npmjs.com/package/cypress-multi-reporters
+
 
