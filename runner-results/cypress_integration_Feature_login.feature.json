@@ -1,0 +1,10 @@
+{
+  "suites": 1,
+  "tests": 1,
+  "passes": 1,
+  "pending": 0,
+  "failures": 0,
+  "start": "2022-04-15T10:44:54.031Z",
+  "duration": 54502,
+  "file": "cypress/integration/Feature/login.feature"
+}
