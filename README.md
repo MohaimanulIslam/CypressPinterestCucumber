@@ -116,10 +116,22 @@ npx cypress-tags run -e TAGS ='@Your-annotation',allure=true
 ./node_modules/.bin/cypress-tags run -e TAGS='@feature-tag',allure=true
 <br>
 npx cypress run --env  "TAGS=@smoke","allure=true"
+
+**Parallel Run Added**
+
+npm i cypress-parallel
+<br>
+Added two this in package.json
+<br>
+"scripts": {
 <br>
 "cy:run": "cypress run --browser chrome --headed",
 <br>
 "cy:parallel": "cypress-parallel -s cy:run -t 2 -d \"cypress/integration/Feature/*.feature\" -a false"
+<br>
+}
+
+
 
 
 
