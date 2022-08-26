@@ -52,3 +52,4 @@ Please make use of cosmiconfig to create a configuration for the plugin, for exa
   "nonGlobalStepDefinitions": true
 <br>}
 
+
